@@ -1,0 +1,24 @@
+<div *ngFor="let message of messages" >
+    <div class="row">
+        <div class="col-xs-12">
+            <div *ngIf="message.type=='joined'||message.type=='left'" class="joined">     
+                <div *ngIf="message.sender==userData.name" >
+                    <button>You {{message.type}}.</button>
+                </div>   
+                <div *ngIf="message.sender!=userData.name">
+                    <button>{{message.sender}} {{message.type}}.</button>
+                </div>   
+            </div>
+            
+            <div *ngIf="message.sender!=userData.name && message.type=='send' "  class="item">
+                <i>{{message.sender}}</i>
+                <h5>{{message.text}}</h5>
+                <i>{{message.date| date:'short':'+0530'}}</i> 
+            </div>
+            <div *ngIf="message.sender==userData.name && message.type=='send'" class="item2">
+                <h5>{{message.text}}</h5>
+                <i> {{message.date| date:'short':'+0530'}}</i> 
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,6 @@
+<input  [(ngModel)]="message"    (keyup)="submit($event)"
+    placeholder="type a message" type="text" size="33"   >
+<button     (click)="send()"
+        style="color: rgb(255, 255, 255); background-color: green;">
+    <i class="fa fa-paper-plane" aria-hidden="true"></i>
+</button>
