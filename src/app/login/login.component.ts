@@ -24,7 +24,7 @@ constructor(private router:Router,private socialAuthService: AuthService , priva
   {
     this.socialAuthService.signIn    (GoogleLoginProvider.PROVIDER_ID).then(
       (userData) => {
-        //console.log(" sign in data : " , userData);
+        //nodemon app.jsconsole.log(" sign in data : " , userData);
 
        // this.chat.getuserdata(userData)
         this.router.navigate(["/room"]);
