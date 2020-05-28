@@ -10,7 +10,7 @@ import {
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
-})
+}) 
 export class LoginComponent implements OnInit {
 
 constructor(private router:Router,private socialAuthService: AuthService , private chat:ChatService )
@@ -28,6 +28,7 @@ constructor(private router:Router,private socialAuthService: AuthService , priva
 
        // this.chat.getuserdata(userData)
         this.router.navigate(["/room"]);
+        console.log(userData)
         this.chat.setUserdata(userData)
         
       }

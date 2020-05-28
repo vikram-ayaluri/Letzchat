@@ -9,7 +9,7 @@ import {Router} from '@angular/router';
 })
 
 export class ChatService {
-    private url = 'http://localhost:3000';
+    private url = 'https://letzchat741.herokuapp.com/';
 
     userData ={name:localStorage.getItem('username'),email:localStorage.getItem('email'),photoURL:localStorage.getItem('photoURL')}
 
