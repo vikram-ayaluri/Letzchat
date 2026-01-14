@@ -23,7 +23,7 @@
     "angular-6-social-login": "^1.1.1",
     "angularfire2": "^5.4.2",
     "bootstrap": "^3.4.1",
-    "express": "^4.17.1",
+    "express": "^4.21.2",
     "firebase": "^7.14.2",
     "font-awesome": "^4.7.0",
     "nodemon": "^2.0.3",
